@@ -1,0 +1,25 @@
+@media (max-width: 640px) {
+  .fixed {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    flex: 1 1 100%;
+  }
+  .overflow-y-auto {
+    overflow-y: hidden;
+  }
+  .w-64 {
+    width: 100%;
+  }
+  .border-r {
+    border-right-width: 0px;
+  }
+  .flex {
+    padding-top: 32px; /* Ajusta el padding según sea necesario */
+    flex-direction: column; /* Ajusta la dirección del flex container */
+  }
+  .flex-grow {
+    flex-grow: 1; /* Para que el contenido del menú crezca y ocupe el espacio disponible */
+  }
+}

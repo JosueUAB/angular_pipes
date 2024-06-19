@@ -1,0 +1,98 @@
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Fechas</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Usaremos funciones de fecha para poder mostrarlo en diferentes  formatos</p>
+      <div class="flex pl-4w-full mx-auto">
+
+        <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6
+        focus:outline-none hover:bg-indigo-600 rounded"(click)="valor=!valor" (click)="mostrarmensaje(valor)">{{mensaje}} </button>
+      </div>
+      @if (valor) {
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          {{fecha }}
+        </p>
+
+
+      }
+    </div>
+    <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+      <table class="table-auto w-full text-left whitespace-no-wrap">
+        <thead>
+          <tr>
+            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">Opcion</th>
+            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">equivalencia</th>
+            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">resultado</th>
+            <th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-4 py-3">short </td>
+            <td class="px-4 py-3">'M/d/yy, h:mm a' </td>
+            <td class="px-4 py-3"> {{fecha |date:  'M/d/yy, h:mm a'}}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">medium </td>
+            <td class="px-4 py-3">'MMM d, y, h:mm:ss a' </td>
+            <td class="px-4 py-3"> {{fecha |date: 'MMM d, y, h:mm:ss a' }}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">long </td>
+            <td class="px-4 py-3">'MMMM d, y, h:mm:ss a z'	</td>
+            <td class="px-4 py-3"> {{fecha |date: 'MMMM d, y, h:mm:ss a z'	}}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">full </td>
+            <td class="px-4 py-3">'EEEE, MMMM d, y, h:mm:ss a zzzz'	 </td>
+            <td class="px-4 py-3"> {{fecha |date:'EEEE, MMMM d, y, h:mm:ss a zzzz'	 }}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">shortDate </td>
+            <td class="px-4 py-3">'M/d/yy'	 </td>
+            <td class="px-4 py-3"> {{fecha |date:'M/d/yy'	}}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">mediumDate </td>
+            <td class="px-4 py-3">'MMM d, y'	 </td>
+            <td class="px-4 py-3"> {{fecha |date: 'MMM d, y'}}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">longDate </td>
+            <td class="px-4 py-3">'MMMM d, y'	 </td>
+            <td class="px-4 py-3"> {{fecha |date: 'MMMM d, y'	}}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">fullDate </td>
+            <td class="px-4 py-3">'EEEE, MMMM d, y'	 </td>
+            <td class="px-4 py-3"> {{fecha |date:'EEEE, MMMM d, y' }}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">shortTime </td>
+            <td class="px-4 py-3">'h:mm a'	 </td>
+            <td class="px-4 py-3"> {{fecha |date:'h:mm a'	 }}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">mediumTime </td>
+            <td class="px-4 py-3">'h:mm:ss a'	 </td>
+            <td class="px-4 py-3"> {{fecha |date:'h:mm:ss a'	 }}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">longTime </td>
+            <td class="px-4 py-3">'h:mm:ss a z'	 </td>
+            <td class="px-4 py-3"> {{fecha |date:'h:mm:ss a z'	 }}</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3">fullTime </td>
+            <td class="px-4 py-3">h:mm:ss a zzzz' </td>
+            <td class="px-4 py-3"> {{fecha |date:'h:mm:ss a zzzz'	 }}</td>
+          </tr>
+
+
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>

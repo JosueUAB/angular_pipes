@@ -1,0 +1,79 @@
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Pipes Letras Myusculas y minusculas</h1>
+    <p><span>{{letras}}</span></p>
+    <div class="flex flex-wrap -m-4">
+
+     <div class="p-4 md:w-1/2 w-full">
+      <div class="h-full bg-gray-100 p-8 rounded">
+          <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+            {{pipes[0]}}
+          </span></h1>
+          <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            {{letras | uppercase }}
+          </p>
+        <a class="inline-flex items-center">
+          <span class="flex-grow flex flex-col pl-4">
+            <span class="title-font font-medium text-gray-900">resultado</span>
+            <span class="text-gray-500 text-sm">convierte todo a mayusculas</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="p-4 md:w-1/2 w-full">
+      <div class="h-full bg-gray-100 p-8 rounded">
+          <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+            {{pipes[1]}}
+          </span></h1>
+          <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            {{letras | lowercase }}
+          </p>
+        <a class="inline-flex items-center">
+          <span class="flex-grow flex flex-col pl-4">
+            <span class="title-font font-medium text-gray-900">resultado</span>
+            <span class="text-gray-500 text-sm">convierte todo a minusculas</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="p-4 md:w-1/2 w-full">
+      <div class="h-full bg-gray-100 p-8 rounded">
+          <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+            {{pipes[2]}}
+          </span></h1>
+          <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            {{letras | titlecase }}
+          </p>
+        <a class="inline-flex items-center">
+          <span class="flex-grow flex flex-col pl-4">
+            <span class="title-font font-medium text-gray-900">resultado</span>
+            <span class="text-gray-500 text-sm">convierte todo a camelcase</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="p-4 md:w-1/2 w-full">
+      <div class="h-full bg-gray-100 p-8 rounded">
+          <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+            {{pipes[3]}}
+          </span></h1>
+          <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            {{letras | slice: 0:25 }}
+          </p>
+        <a class="inline-flex items-center">
+          <span class="flex-grow flex flex-col pl-4">
+            <span class="title-font font-medium text-gray-900">resultado</span>
+            <span class="text-gray-500 text-sm">cuerta string arreglos slice: 0:25</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+
+
+    </div>
+  </div>
+</section>
