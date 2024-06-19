@@ -94,6 +94,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/angular_pipes/",
+            "repo": "https://github.com/JosueUAB/angular_pipes.git"
+                }
+
         }
       }
     }

@@ -1,6 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+export interface Gatos {
+  nombre:      string;
+  gusto:       string;
+  edad:        number;
+  descripcion: string;
+}
+
 @Component({
   selector: 'app-gatos',
   standalone: true,
@@ -11,7 +18,7 @@ import { Component } from '@angular/core';
 export class GatosComponent {
 imagen:string='https://thecatapi.com/api/images/get?format=src&type=gif?results_per_page=';
 
-gatos=[
+gatos:Gatos[]=[
   {
     nombre:'pepinillo',
     gusto:'jugar',
@@ -36,7 +43,7 @@ gatos=[
     edad:2,
     descripcion:'gatito que es jugueton la combinacion de los demas'
   },
-]
+];
 
 
 }
