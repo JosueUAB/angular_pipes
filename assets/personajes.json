@@ -1,0 +1,62 @@
+[
+  {
+      "nombre": "Naruto Uzumaki",
+      "clan": "Uzumaki",
+      "poder": "Jinchuriki del Zorro de Nueve Colas",
+      "imagen": "http://localhost:4200/assets/naruto/01_naruto.jpg"
+  },
+  {
+      "nombre": "Sasuke Uchiha",
+      "clan": "Uchiha",
+      "poder": "Sharingan, Rinnegan",
+      "imagen": "http://localhost:4200/assets/naruto/02_Sasuke.jpg"
+  },
+  {
+      "nombre": "Sakura Haruno",
+      "clan": "Haruno",
+      "poder": "Fuerza y habilidades médicas avanzadas",
+      "imagen": "http://localhost:4200/assets/naruto/03_Sakura.jpg"
+  },
+  {
+      "nombre": "Kakashi Hatake",
+      "clan": "Hatake",
+      "poder": "Sharingan (copiado), Chidori",
+      "imagen": "http://localhost:4200/assets/naruto/04_Kakashi.jpg"
+  },
+  {
+      "nombre": "Itachi Uchiha",
+      "clan": "Uchiha",
+      "poder": "Sharingan, Mangekyo Sharingan",
+      "imagen": "http://localhost:4200/assets/naruto/05_Itachi.jpg"
+  },
+  {
+      "nombre": "Hinata Hyuga",
+      "clan": "Hyuga",
+      "poder": "Byakugan, Técnicas de Juuken",
+      "imagen": "http://localhost:4200/assets/naruto/06_Hinata.jpg"
+  },
+  {
+      "nombre": "Shikamaru Nara",
+      "clan": "Nara",
+      "poder": "Manipulación de sombras, gran estratega",
+      "imagen": "http://localhost:4200/assets/naruto/07_Shikamaru.jpg"
+  },
+  {
+      "nombre": "Gaara",
+      "clan": "Kazekage",
+      "poder": "Jinchuriki del Shukaku, control de arena",
+      "imagen": "http://localhost:4200/assets/naruto/08_Gaara.jpg"
+  },
+  {
+      "nombre": "Rock Lee",
+      "clan": "No pertenece a un clan reconocido",
+      "poder": "Taijutsu avanzado, apertura de los 8 puertos celestiales",
+      "imagen": "http://localhost:4200/assets/naruto/09_Rock_Lee.jpg"
+  },
+  {
+      "nombre": "Tsunade Senju",
+      "clan": "Senju",
+      "poder": "Técnicas médicas, Ninjutsu de fuerza",
+      "imagen": "http://localhost:4200/assets/naruto/10_Tsunade.jpg"
+  }
+]
