@@ -1,10 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TituloPipe } from '../pipes/titulo.pipe';
 
 @Component({
   selector: 'app-letras',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,
+            TituloPipe,
+  ],
   templateUrl: './letras.component.html',
   styleUrl: './letras.component.scss'
 })

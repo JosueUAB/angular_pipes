@@ -100,8 +100,7 @@
           "options": {
             "baseHref": "/angular_pipes/",
             "repo": "https://github.com/JosueUAB/angular_pipes.git"
-                }
-
+            }
         }
       }
     }
