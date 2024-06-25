@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-seniales',
@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './seniales.component.scss'
 })
 export class SenialesComponent {
+  count =signal<any>(1)
+
+
+  constructor(){
+    console.log(this.count());
+  }
 
 }
