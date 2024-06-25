@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { PersonajesService } from '../../services/personajes.service';
 
 
@@ -85,7 +85,10 @@ export class UserComponent {
 //         "imagen": "https://example.com/tsunade.jpg"
 //     }
 // ];
-personajes:any=[];
+// personajes:any=[];
+
+personaje=signal<any |undefined>(undefined);
+public Personajes =  computed(()=>this.personaje());
 
     constructor(){
 
@@ -106,8 +109,7 @@ personajes:any=[];
       this.persobajesService.getPersonajes()
       .subscribe({
         next:(resp)=>{
-          this.personajes=resp;
-          console.log(resp);
+          this.personaje.set(resp);
         },
         error:(err)=>{
           console.log(err);

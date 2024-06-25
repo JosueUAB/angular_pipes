@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +16,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 })
 export class AppComponent {
   title = '10_sidebar_router_outlet';
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }

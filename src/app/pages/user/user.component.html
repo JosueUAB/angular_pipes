@@ -6,7 +6,7 @@
         Naruto Uzumaki es un niño marginado en la aldea ninja en la que vive. En su interior reside el poder de una bestia que estuvo al borde de destruir el pueblo años atrás, el Kyubi, el zorro de nueve colas, lo que hace que nadie quiera acercarse a él por considerarlo maldito. Pese a su soledad y su tristeza, Naruto quiere ser un ninja, pero no uno cualquiera: quiere ser Hokage, el líder de la aldea. En su camino, sus convicciones atraerán a muchos amigos y compañeros de viaje.</p>
     </div>
     <div class="flex flex-wrap -m-4">
-      @for (lista of personajes; track $index) {
+      @for (lista of Personajes(); track $index) {
         <div class="p-4 lg:w-1/4 md:w-1/2">
           <div class="h-full flex flex-col items-center text-center">
             <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="{{lista.imagen}}">
